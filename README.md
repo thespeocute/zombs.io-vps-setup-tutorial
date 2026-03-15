@@ -22,7 +22,7 @@
    3. This should get you logged into your vps too set it up all from your own computer
 
 
-## Next steps
+## Main steps
 
    1. Download the mainx.zip file thats provided in this repository 
    

@@ -4,9 +4,6 @@
 
 This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.io sessions with lower latency and more control.
 
-**Important Legal / Usage Note**  
-This setup is for educational / private use only. Respect the original game's ToS. Many public VPS providers are already banned by Zombs.io — choose providers/locations carefully.
-
 ## ✨ Features
 - Simple Node.js + Express + WebSocket proxy
 - PM2 process manager (auto-restart, logs)

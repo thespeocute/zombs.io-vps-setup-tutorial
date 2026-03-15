@@ -26,4 +26,5 @@
 
    1. Download the mainx.zip file thats provided in this repository 
    2. On the vps do these commands: **sudo apt update && sudo apt upgrade -y**
+                                    **   
 

@@ -1,4 +1,4 @@
-# Zombs.io Proxy VPS Setup Guide 🚀
+# Zombs.io VPS Setup Guide 🚀
 
 **Run your own Zombs.io proxy / session forwarder on a Linux VPS**
 

@@ -102,11 +102,21 @@
 
        - `npm install express ws bytebuffer`
 
-   8. Start the pm2 server
+   7. Edit index.js too have your ip on each vps
+
+       - `cd /root/zombs`
+      
+       - `nano index.html`
+
+             - Find the file 
+   
+   
+   
+   9. Start the pm2 server
 
        - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
 
-        - `pm2 save`  
+       - `pm2 save`  
 
    10. Check logs 
 

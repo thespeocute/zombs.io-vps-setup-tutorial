@@ -13,7 +13,7 @@
    - YOU WILL NOT NEED TAMPERMONKEY ANYTHING FOR THIS.
 
 
-### Getting started
+## Getting started
    
    1. Open windows powershell or any other shh program and do this command: `ssh root@(YOUR-VPS'S-IP)`
 
@@ -22,7 +22,7 @@
    3. This should get you logged into your vps too set it up all from your own computer
 
 
-## Main steps
+### Main steps
 
    1. Download the mainx.zip file thats provided in this repository 
    

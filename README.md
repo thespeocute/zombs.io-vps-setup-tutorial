@@ -137,7 +137,7 @@
 
    9. Go onto google or chrome whatever then go to the vps's site
 
-       - `http://(YOUR-VPS-IP)
+       - `http://(YOUR-VPS-IP)`
 
 
    10. Congrats you now have a vps site you can send sessions on    

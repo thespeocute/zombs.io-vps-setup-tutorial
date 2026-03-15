@@ -1,28 +1,30 @@
-# THIS IS A GUIDE ON SETTING UP A LINUX UBUNTU VPS FOR ZOMBS.IO 
+# Zombs.io Proxy VPS Setup Guide 🚀
 
-## Before starting: 
-   
-   - You'll need an unbanned vps provider/location, these arnt too hard to find but let it be known alot of well known vps providers are banned due too other players using them.  
-   
-   - Any ssh program like windows powershell or putty.
-   
-   - Recommended specs for a single vps if youre planning on filling a server is atleast: 2 CPU cores, 3GB of memory and 30gb of ssd storage.
-   
-   - Choose a location near where zombs servers a located for less Ms.
-   
-   - YOU WILL NOT NEED TAMPERMONKEY ANYTHING FOR THIS.
+**Run your own Zombs.io proxy / session forwarder on a Linux VPS**
 
+This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.io sessions with lower latency and more control.
 
-## Getting started
-   
-   1. Open windows powershell or any other shh program and do this command: `ssh root@(YOUR-VPS'S-IP)`
+**Important Legal / Usage Note**  
+This setup is for educational / private use only. Respect the original game's ToS. Many public VPS providers are already banned by Zombs.io — choose providers/locations carefully.
 
-   2. You will be prompted too type in your password, it wont show you typing it but just copy your password from your vps provider and paste it by right clicking in Powershell and press enter
-   
-   3. This should get you logged into your vps too set it up all from your own computer
+## ✨ Features
+- Simple Node.js + Express + WebSocket proxy
+- PM2 process manager (auto-restart, logs)
+- Basic UFW firewall protection
+- No Tampermonkey / browser extension required
 
+## 📋 Requirements
+- **Unbanned VPS** (location close to Zombs.io servers for low ping)
+- **Recommended specs** (for full server):  
+  • 2+ CPU cores  
+  • 3+ GB RAM  
+  • 30+ GB SSD
+- SSH client: Windows PowerShell, PuTTY, Terminal, etc.
+- The `mainx.zip` file from this repository
 
-### Main steps
+**You do NOT need Tampermonkey or any browser scripts.**
+
+## 🚀 Main steps
 
    1. Download the mainx.zip file thats provided in this repository 
    

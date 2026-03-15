@@ -43,5 +43,7 @@
 
        - Then open a new Powershell window and type this for each vps too upload the zip file too it: 
 
+           - `scp -r (PATHWAY-THAT-YOu-COPIED) root@(YOUR-VPS-IP):/root/zombs/`
+
                                       
 

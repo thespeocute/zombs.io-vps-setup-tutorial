@@ -29,17 +29,20 @@
    2. On the ssh vps do these commands 
 
        - `sudo apt update && sudo apt upgrade -y`
+
        - `sudo apt install nodejs npm -y`
+
        - `node -v` (Should show v18 or higher)
 
-   3. Create a directory and copy files
+   4. Create a directory and copy files
 
        - On the ssh Powershell window you have do these commands too make the file the zip will go into then go into that file
 
            - `mkdir ~/zombs`
+
            - `cd ~/zombs`
        
-        - Go on your file explorer and go too where the file was downloaded, right click and copy the file path
+       - Go on your file explorer and go too where the file was downloaded, right click and copy the file path
 
        - Then open a new Powershell window and type this for each vps too upload the zip file too it
 
@@ -60,42 +63,56 @@
         - Move the files up
 
            - `cd /root/zombs`
+           
            - `mv mainx/* .`
+           
            - `mv mainx/.* . 2>/dev/null || true`
+
            - `rmdir mainx`
+           
            - `ls -la` (should see server.js, public/, etc.)    
 
-   4. Install pm2
+   5. Install pm2
 
        - On vps do these commands 
 
            - `sudo npm install -g pm2`
+          
            - `pm2 startup`
 
        - Configure firewall    
 
            - `sudo apt install ufw -y`
+          
            - `sudo ufw allow ssh`
+          
            - `sudo ufw allow 80/tcp`
+          
            - `sudo ufw allow 8080/tcp`
+          
            - `sudo ufw enable`
+          
            - `sudo ufw status`
 
-   5. Install dependencies
+   6. Install dependencies
 
        - `cd /root/zombs`
+       
        - `npm init -y`
+
        - `npm install express ws bytebuffer`
 
-   6. Start the pm2 server
+   8. Start the pm2 server
 
        - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
-       - `pm2 save`  
 
-   7. Check logs 
+        - `pm2 save`  
+
+   10. Check logs 
 
        - `pm2 list`
-       - `pm2 logs zombs-proxy --lines 50`
+
+        - `pm2 logs zombs-proxy --lines 50`
          **Should show listening and session saver started**
       
 

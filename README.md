@@ -59,6 +59,7 @@
 
         - Move the files up
 
+           - `cd /root/zombs`
            - `mv mainx/* .`
            - `mv mxyz/.* . 2>/dev/null || true`
            - `rmdir mxyz`

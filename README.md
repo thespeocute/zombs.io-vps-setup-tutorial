@@ -24,9 +24,18 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
 ## 🚀 Main steps
 
    1. Download the mainx.zip file thats provided in this repository 
+
+
+   2. Ssh onto your vps(s) 
+
+       - On your ssh program like powershell do `ssh root@(YOUR-VPS-IP)`
+
+       - When prompted for a password enter it, it will not show you typing it but its there
+
+       - That should allow you on your vps, if not its firewall issues on your provider side 
    
    
-   2. On the ssh vps do these commands 
+   3. On the ssh vps do these commands 
 
        - `sudo apt update && sudo apt upgrade -y`
 
@@ -35,7 +44,7 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
        - `node -v` (Should show v18 or higher)
 
    
-   3. Create a directory and copy files
+   4. Create a directory and copy files
 
        - On the ssh Powershell window you have do these commands too make the file the zip will go into then go into that file
 
@@ -74,7 +83,7 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
            - `ls -la` (should see server.js, public/, etc.)    
 
    
-   4. Install pm2
+   5. Install pm2
 
        - On vps do these commands 
 
@@ -97,7 +106,7 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
            - `sudo ufw status`
 
    
-   5. Install dependencies
+   6. Install dependencies
 
        - `cd /root/zombs`
        
@@ -106,7 +115,7 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
        - `npm install express ws bytebuffer`
 
    
-   6. Edit index.js too have your ip on each vps
+   7. Edit index.js too have your ip on each vps
 
        - `cd /root/zombs`
       
@@ -119,14 +128,14 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
        - Exit nano and save do cntrl o too save then press y and then cntrl x too exit nano    
    
   
-   7. Start the pm2 server
+   8. Start the pm2 server
 
        - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
 
        - `pm2 save`  
 
    
-   8. Check logs 
+   9. Check logs 
  
        - `pm2 list`
 
@@ -134,12 +143,12 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
          **Should show listening and session saver started**
 
 
-   9. Go onto google or chrome whatever then go to the vps's site
+   10. Go onto google or chrome whatever then go to the vps's site
 
        - `http://(YOUR-VPS-IP)`
 
 
-   10. Congrats you now have a vps site you can send sessions on    
+   11. Congrats you now have a vps site you can send sessions on    
       
 
 

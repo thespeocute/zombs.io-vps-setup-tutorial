@@ -61,8 +61,8 @@
 
            - `cd /root/zombs`
            - `mv mainx/* .`
-           - `mv mxyz/.* . 2>/dev/null || true`
-           - `rmdir mxyz`
+           - `mv mainx/.* . 2>/dev/null || true`
+           - `rmdir mainx`
            - `ls -la` (should see server.js, public/, etc.)    
 
    4. Install pm2
@@ -81,7 +81,23 @@
            - `sudo ufw enable`
            - `sudo ufw status`
 
-   5.         
+   5. Install dependencies
+
+       - `cd /root/zombs`
+       - `npm init -y`
+       - `npm install express ws bytebuffer`
+
+   6. Start the pm2 server
+
+       - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
+       - `pm2 save`  
+
+   7. Check logs 
+
+       - `pm2 list`
+       - `pm2 logs zombs-proxy --lines 50`
+         **Should show listening and session saver started**
+      
 
 
 

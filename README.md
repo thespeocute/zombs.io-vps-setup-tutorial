@@ -96,33 +96,33 @@
 
    6. Install dependencies
 
-       - `cd /root/zombs`
+           - `cd /root/zombs`
        
-       - `npm init -y`
+           - `npm init -y`
 
-       - `npm install express ws bytebuffer`
+           - `npm install express ws bytebuffer`
 
    7. Edit index.js too have your ip on each vps
 
-       - `cd /root/zombs`
+           - `cd /root/zombs`
       
-       - `nano index.html`
-
-             - Find the file 
+           - `nano index.html`
+ 
+       - While in nano 
    
    
    
    9. Start the pm2 server
 
-       - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
+           - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
 
-       - `pm2 save`  
+           - `pm2 save`  
 
    10. Check logs 
+ 
+           - `pm2 list`
 
-       - `pm2 list`
-
-        - `pm2 logs zombs-proxy --lines 50`
+           - `pm2 logs zombs-proxy --lines 50`
          **Should show listening and session saver started**
       
 

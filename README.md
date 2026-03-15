@@ -26,24 +26,99 @@
 
    1. Download the mainx.zip file thats provided in this repository 
    
-   2. On the ssh vps do these commands: 
+   2. On the ssh vps do these commands 
 
        - `sudo apt update && sudo apt upgrade -y`
        - `sudo apt install nodejs npm -y`
        - `node -v` (Should show v18 or higher)
 
-   3. Create a directory and copy files:
+   3. Create a directory and copy files
 
-       - On the ssh Powershell window you have do these commands too make the file the zip will go into then go into that file:
+       - On the ssh Powershell window you have do these commands too make the file the zip will go into then go into that file
 
            - `mkdir ~/zombs`
            - `cd ~/zombs`
-       
-       - Go on your file explorer and go too where the file was downloaded, right click and copy the file path.
 
-       - Then open a new Powershell window and type this for each vps too upload the zip file too it: 
+       - Move the files up
+
+           - `mv mainx/* .`
+           - `mv mxyz/.* . 2>/dev/null || true`
+           - `rmdir mxyz`
+           - `ls -la` (should see server.js, public/, etc.)
+       
+       
+       - Go on your file explorer and go too where the file was downloaded, right click and copy the file path
+
+       - Then open a new Powershell window and type this for each vps too upload the zip file too it
 
            - `scp -r (PATHWAY-THAT-YOu-COPIED) root@(YOUR-VPS-IP):/root/zombs/`
+           
+       - Back on the vps ssh install unzip
 
+           - `sudo apt install unzip -y`
+
+       - Then unzip it once its on there and unzip is downloaded
+
+           - `unzip mainx.zip -d .`
+
+       - Fix permissions
+
+           - `chmod -R 755 .`
+
+   4. Install pm2
+
+       - On vps do these commands 
+
+           - `sudo npm install -g pm2`
+           - `pm2 startup`
+
+       - Configure firewall    
+
+           - `sudo apt install ufw -y`
+           - `sudo ufw allow ssh`
+           - `sudo ufw allow 80/tcp`
+           - `sudo ufw allow 8080/tcp`
+           - `sudo ufw enable`
+           - `sudo ufw status`
+
+   5.         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
                                       
 

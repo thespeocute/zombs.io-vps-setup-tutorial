@@ -15,7 +15,7 @@
 
 ### Getting started
    
-   1. Open windows powershell or any other shh program and do this command: ssh root@(YOUR-VPS'S-IP).
+   1. Open windows powershell or any other shh program and do this command: ssh root@(YOUR-VPS'S-IP). # without brackets
 
    2. You will be prompted too type in your password, it wont show you typing it but just copy your password from your vps provider and paste it by right clicking in Powershell and press enter.
    

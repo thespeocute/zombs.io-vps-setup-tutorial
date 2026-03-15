@@ -26,6 +26,7 @@
 
    1. Download the mainx.zip file thats provided in this repository 
    
+   
    2. On the ssh vps do these commands 
 
        - `sudo apt update && sudo apt upgrade -y`
@@ -34,7 +35,8 @@
 
        - `node -v` (Should show v18 or higher)
 
-   4. Create a directory and copy files
+   
+   3. Create a directory and copy files
 
        - On the ssh Powershell window you have do these commands too make the file the zip will go into then go into that file
 
@@ -72,7 +74,8 @@
            
            - `ls -la` (should see server.js, public/, etc.)    
 
-   5. Install pm2
+   
+   4. Install pm2
 
        - On vps do these commands 
 
@@ -94,36 +97,50 @@
           
            - `sudo ufw status`
 
-   6. Install dependencies
+   
+   5. Install dependencies
 
-           - `cd /root/zombs`
+       - `cd /root/zombs`
        
-           - `npm init -y`
+       - `npm init -y`
 
-           - `npm install express ws bytebuffer`
+       - `npm install express ws bytebuffer`
 
-   7. Edit index.js too have your ip on each vps
+   
+   6. Edit index.js too have your ip on each vps
 
-           - `cd /root/zombs`
+       - `cd /root/zombs`
       
-           - `nano index.html`
+       - `nano index.html`
  
-       - While in nano 
-   
-   
-   
-   9. Start the pm2 server
+       - While in nano do cntrl w and search for this line: `ws://(YOUR-VPS-IP):8080`
 
-           - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
+       - Change the (YOUR-VPS-IP) part too your vps's ip and leave the rest
 
-           - `pm2 save`  
+       - Exit nano and save do cntrl o too save then press y and then cntrl x too exit nano    
+   
+  
+   7. Start the pm2 server
 
-   10. Check logs 
+       - `pm2 start /root/zombs/server.js --name zombs-proxy --cwd /root/zombs`
+
+       - `pm2 save`  
+
+   
+   8. Check logs 
  
-           - `pm2 list`
+       - `pm2 list`
 
-           - `pm2 logs zombs-proxy --lines 50`
+       - `pm2 logs zombs-proxy --lines 50`
          **Should show listening and session saver started**
+
+
+   9. Go onto google or chrome whatever then go to the vps's site
+
+       - `http://(YOUR-VPS-IP)
+
+
+   10. Congrats you now have a vps site you can send sessions on    
       
 
 

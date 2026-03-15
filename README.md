@@ -25,9 +25,13 @@
 ## Next steps
 
    1. Download the mainx.zip file thats provided in this repository 
-   2. On the vps do these commands: 
+   
+   2. On the ssh vps do these commands: 
 
        - sudo apt update && sudo apt upgrade -y
        - sudo apt install nodejs npm -y
+       - node -v (Should show v18 or higher)
+
+   3. 
                                     
 

@@ -28,9 +28,9 @@
    
    2. On the ssh vps do these commands: 
 
-       - sudo apt update && sudo apt upgrade -y
-       - sudo apt install nodejs npm -y
-       - node -v (Should show v18 or higher)
+       - `sudo apt update && sudo apt upgrade -y`
+       - `sudo apt install nodejs npm -y`
+       - `node -v` (Should show v18 or higher)
 
    3. 
                                     

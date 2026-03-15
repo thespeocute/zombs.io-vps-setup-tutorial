@@ -10,3 +10,6 @@
    - Choose a location near where zombs servers a located for less Ms.
    
    - YOU WILL NOT NEED TAMPERMONKEY ANYTHING FOR THIS.
+
+### Getting started
+   - Open windows powershell or any other shh program and do this command: 

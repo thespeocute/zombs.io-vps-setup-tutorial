@@ -32,6 +32,16 @@
        - `sudo apt install nodejs npm -y`
        - `node -v` (Should show v18 or higher)
 
-   3. 
-                                    
+   3. Create a directory and copy files:
+
+       - On the ssh Powershell window you have do these commands too make the file the zip will go into then go into that file:
+
+           - `mkdir ~/zombs`
+           - `cd ~/zombs`
+       
+       - Go on your file explorer and go too where the file was downloaded, right click and copy the file path.
+
+       - Then open a new Powershell window and type this for each vps too upload the zip file too it: 
+
+                                      
 

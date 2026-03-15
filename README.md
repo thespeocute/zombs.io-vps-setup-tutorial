@@ -38,16 +38,8 @@
 
            - `mkdir ~/zombs`
            - `cd ~/zombs`
-
-       - Move the files up
-
-           - `mv mainx/* .`
-           - `mv mxyz/.* . 2>/dev/null || true`
-           - `rmdir mxyz`
-           - `ls -la` (should see server.js, public/, etc.)
        
-       
-       - Go on your file explorer and go too where the file was downloaded, right click and copy the file path
+        - Go on your file explorer and go too where the file was downloaded, right click and copy the file path
 
        - Then open a new Powershell window and type this for each vps too upload the zip file too it
 
@@ -64,6 +56,13 @@
        - Fix permissions
 
            - `chmod -R 755 .`
+
+        - Move the files up
+
+           - `mv mainx/* .`
+           - `mv mxyz/.* . 2>/dev/null || true`
+           - `rmdir mxyz`
+           - `ls -la` (should see server.js, public/, etc.)    
 
    4. Install pm2
 

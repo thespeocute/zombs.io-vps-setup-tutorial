@@ -12,7 +12,7 @@ This guide helps you set up a lightweight proxy server on Ubuntu to host Zombs.i
 
 ## 📋 Requirements
 - **Unbanned VPS** (location close to Zombs.io servers for low ping)
-- **Recommended specs** (for full server):  
+- **Recommended specs for each vps** (for full server):  
   • 2+ CPU cores  
   • 3+ GB RAM  
   • 30+ GB SSD
